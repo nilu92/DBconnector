@@ -50,7 +50,7 @@ namespace FormUI
             this.PeopleFoundBox.ItemHeight = 25;
             this.PeopleFoundBox.Location = new System.Drawing.Point(17, 180);
             this.PeopleFoundBox.Name = "PeopleFoundBox";
-            this.PeopleFoundBox.Size = new System.Drawing.Size(434, 129);
+            this.PeopleFoundBox.Size = new System.Drawing.Size(542, 129);
             this.PeopleFoundBox.TabIndex = 0;
             // 
             // LastNameText
@@ -159,7 +159,7 @@ namespace FormUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 561);
+            this.ClientSize = new System.Drawing.Size(571, 561);
             this.Controls.Add(this.InsertRecordButton);
             this.Controls.Add(this.EmailAddressInsLabel);
             this.Controls.Add(this.EmailAddressInsText);

@@ -15,8 +15,8 @@ namespace FormUI
             {
                 //var output = connection.Query<Person>($"select * from People where LastName ='{LastName}'").ToList();
                 //var output = connection.Query<Person>("dbo.People_GetByLastName @LastName", new { LastName = LastName }).ToList();
-               return connection.Query<Person>($"select * from People where LastName = '{LastName}'").ToList();
-                
+               var output = connection.Query<Person>($"select * from People where LastName = '{LastName}'").ToList();
+                return output;
             }
         }
 
