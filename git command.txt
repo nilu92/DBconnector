@@ -1,0 +1,58 @@
+git checkout -b " name " add new branch or move to branch
+git add . select all changed files
+git status check status
+git checkout "name" change or move to branch
+git push
+git commit -m "advent of code functionality day 1 and 2 2020 "
+//low case and - between blank space
+
+
+
+
+cd starter-typescript change director TAB to change btw folder
+
+
+Kopiera till annat dokument sen 
+
+select FirstName from People where FirstName = 'Niklas' ;
+
+Connection String 
+
+ <connectionStrings>
+    <add name="Sample" connectionString="Server=(localdb)\MSSQLLocalDB;Database=Sample; User=DESKTOP-E57017B\Nikla; Trusted_Connection=True;" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
+///Stored Procedure
+create proc sp_productInsert
+@ProductID int,
+@ItemName nvarchar(50),
+@Color nvarchar(50),
+@ExpiryDate datetime
+as
+begin
+Insert into Productinfo_Tab(ProductID,ItemName,Color,ExpiryDate)
+values(@ProductID,@ItemName,@Color,@ExpiryDate)
+
+// Insert new item with stored procedure
+exec dbo.sp_productInsert 101,'Laptop','Black' ,'5/10/2021'
+end
+
+
+
+'((System.Data.SqlClient.SqlConnection)connection).ServerVersion' threw an exception of type 'System.InvalidOperationException'
+Using Dapper 
+using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnVal("Sample")))
+
+// Refer to Connection string in appsetting 
+public static string CnVal(string name)
+        {
+          return  ConfigurationManager.ConnectionStrings[name].ConnectionString;
+        }
+
+
+// Data access
+
+
+
+ var output = connection.Query<Person>("dbo.People_GetByLastName @LastName",new { LastName  = lastName}).ToList();
+                return output;
